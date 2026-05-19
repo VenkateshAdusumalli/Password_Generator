@@ -1,41 +1,168 @@
-# Password_Generator
+# Secure Password Generator
 
-🔒 Strong Password Generator
+A simple and secure password generator built using Python.  
+This project generates strong random passwords with customizable options like uppercase letters, lowercase letters, digits, and symbols.
 
-A simple yet powerful command-line tool for generating strong, random passwords. This Python script allows users to customize their password requirements, ensuring maximum security for their accounts and sensitive data. 💻✨
-Features 🌟
+---
 
-    Customizable Length: Specify the desired length of the password to suit your needs. 🔢
-    Character Variety: Choose from uppercase letters, lowercase letters, digits, and special symbols to create a complex password. 🔠🔡🔢
-    Random Generation: Utilizes Python's random module to generate passwords, ensuring unpredictability and strength. 🎲
+# Features
 
-Installation 🛠️
+- Generate secure random passwords
+- Choose password length
+- Include:
+  - Uppercase letters
+  - Lowercase letters
+  - Digits
+  - Symbols
+- Stores generated passwords in a file
+- Uses Python `secrets` module for security
+- Command-line based application
 
-    Clone the repository:
+---
 
-    git clone https://github.com/dionabazi/Password-Generator.git
+# Technologies Used
 
-    cd Password-Generator
+- Python
+- argparse
+- secrets
+- string
 
-    Ensure you have Python 3 installed on your system. 🐍
+---
 
-Usage 📖
+# Project Structure
 
-Run the script with the desired options:
+```bash
+password_generator.py
+passwordlist.txt
+README.md
+```
 
+---
 
-python3 password_generator.py --length <length> --upper --lower --digits --symbols
+# Installation
 
-Options ⚙️
+## Clone the Repository
 
-    --length <length>: Specify the length of the password (default is 12). 🔍
-    --upper: Include uppercase letters. 🔠
-    --lower: Include lowercase letters. 🔡
-    --digits: Include digits. 🔢
-    --symbols: Include special symbols. ✨
+```bash
+git clone https://github.com/your-username/password-generator.git
+```
 
-Example 📌
+## Navigate to Project Folder
 
-Generate a 16-character password that includes uppercase letters, lowercase letters, digits, and symbols:
+```bash
+cd password-generator
+```
 
-python3 password_generator.py --length 16 --upper --lower --digits --symbols
+---
+
+# How to Run
+
+## Basic Command
+
+```bash
+python password_generator.py --upper --lower --digits --symbols
+```
+
+---
+
+# Command-Line Arguments
+
+| Argument | Description |
+|---|---|
+| `-l` or `--length` | Password length |
+| `--upper` | Include uppercase letters |
+| `--lower` | Include lowercase letters |
+| `--digits` | Include digits |
+| `--symbols` | Include symbols |
+
+---
+
+# Example Commands
+
+## Generate 12-character password
+
+```bash
+python password_generator.py --upper --lower --digits
+```
+
+---
+
+## Generate 20-character strong password
+
+```bash
+python password_generator.py -l 20 --upper --lower --digits --symbols
+```
+
+---
+
+# Example Output
+
+```bash
+Generated Password: A9@kLm2#Qx1P
+Password saved to passwordlist.txt.
+```
+
+---
+
+# How It Works
+
+1. User provides options through command-line arguments.
+2. Program creates a character pool.
+3. Secure random characters are selected using Python's `secrets` module.
+4. Password is generated.
+5. Password is saved into `passwordlist.txt`.
+
+---
+
+# Security Features
+
+- Uses cryptographically secure random generation
+- Excludes unsafe special characters
+- Supports strong password combinations
+
+---
+
+# Why `secrets` Module?
+
+The `secrets` module is designed for:
+- Password generation
+- Authentication systems
+- Security-related applications
+
+It is more secure than Python's `random` module.
+
+---
+
+# Future Improvements
+
+- GUI version
+- Password strength checker
+- Clipboard support
+- Encrypted password storage
+- Password history management
+
+---
+
+# Sample Code Flow
+
+```python
+password = generate_password(
+    args.length,
+    args.upper,
+    args.lower,
+    args.digits,
+    args.symbols
+)
+```
+
+---
+
+# Author
+
+Venkatesh Adusumalli
+
+---
+
+# License
+
+This project is open-source and available under the MIT License.
