@@ -39,22 +39,3 @@ Example 📌
 Generate a 16-character password that includes uppercase letters, lowercase letters, digits, and symbols:
 
 python3 password_generator.py --length 16 --upper --lower --digits --symbols
-
-Contributing 🤝
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any improvements or feature requests. 🚀
-License 📝
-
-This project is licensed under the MIT License.
-
-Screenshots
-
-![Screenshot_2024-10-17_14_22_16](https://github.com/user-attachments/assets/8262d9f8-b49f-4e26-9a28-36c3d3c30211)
-
-
-![Screenshot_2024-10-17_14_22_42](https://github.com/user-attachments/assets/00084b4c-eb74-4329-abbb-0a8cc31324c6)
-
-
-[![bmc-button (2)](https://github.com/user-attachments/assets/8a994d82-5bf8-480e-9e64-728d5aba2e14)](https://ko-fi.com/dionabazi)
-
-Thank you for your support! 💕
